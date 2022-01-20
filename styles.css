@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes shu {
+  0% {
+    transform: rotate(90deg);
+    background-color: blue;
+  }
+  25% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+  50% {
+    transform: rotate(-90deg);
+    background-color: green;
+  }
+  75% {
+    transform: scale(1.5);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: rotate(0);
+    background: red;
+  }
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  background: gold;
+  animation-name: shu;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
